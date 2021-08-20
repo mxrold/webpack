@@ -27,6 +27,17 @@ module.exports = {
           'css-loader',
           'stylus-loader'
         ]
+      },
+      {
+        test: /\.png/,
+        type: 'asset/resource',
+        // Para indicar la ruta de salida de las imagenes
+        // output: {
+        //   assetModuleFilename: 'assets/images/[hash][ext]'
+        // }
+        // generator: {
+        //   filename: 'static/images/[hash][ext][query]'
+        // }
       }
     ],
   },
