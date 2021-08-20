@@ -38,6 +38,13 @@ module.exports = {
         // generator: {
         //   filename: 'static/images/[hash][ext][query]'
         // }
+      }, 
+      {
+        test: /\.(woff|woff2)/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/fonts/[hash][ext]'
+        }
       }
     ],
   },
